@@ -1,3 +1,4 @@
-<div>
+<x-layout>
     <!-- Smile, breathe, and go slowly. - Thich Nhat Hanh -->
-</div>
+    <h1>index</h1>
+</x-layout>
