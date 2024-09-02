@@ -1,4 +1,12 @@
 <x-layout>
-    <!-- It is never too late to be what you might have been. - George Eliot -->
-    <h1>create</h1>
+   <div class="note-container single-note">
+        <h1>Create new note</h1>
+        <form action="{{route('note.store')}}" method="post" class="note">
+            <textarea name="note" class="note-body" rows="10" placeholder="Enter your note here"></textarea>
+            <div class="note-buttons">
+                <a href="{{route('note.index')}}" class="note-cancel-button">Cancel</a>
+                <button class="note-submit-button">Submit</button>
+            </div>
+        </form>
+   </div>
 </x-layout>

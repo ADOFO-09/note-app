@@ -1,4 +1,17 @@
 <x-layout>
-    <!-- It is quality rather than quantity that matters. - Lucius Annaeus Seneca -->
-    <h1>show</h1>
+    <div class="note-container single-note">
+        <div class="note-header">
+            <h1>Note: {{$note->created_at}}</h1>
+            <div class="note-buttons">
+                <a href="{{route('note.edit', ['note' => $note])}}" class="note-edit-button">Edit</a>
+                <button class="note-delete-button">Delete</button>
+            </div>
+        </div>
+        <div class="note">
+            <div class="note-body">
+                {{$note->note}}
+            </div>
+        </div>
+    </div>
 </x-layout>
+ 
