@@ -1,4 +1,4 @@
-<x-layout>
+<x-app-layout>
     <!-- Smile, breathe, and go slowly. - Thich Nhat Hanh -->
     <div class="note-container">
         <a href="{{route('note.create')}}" class="new-note-btn">
@@ -25,4 +25,4 @@
         </div>
         {{$notes->links()}}
     </div>
-</x-layout>
+</x-app-layout>
